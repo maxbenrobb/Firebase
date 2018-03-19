@@ -67,7 +67,7 @@ database.ref().on("child_added", function(childSnapshot, prevChildKey) {
   console.log("DIFFERENCE IN TIME: " + diffTime);
 
   var trainRemainder = diffTime % trainFrequency;
-  console.log(tRemainder);
+  console.log(trainRemainder);
 
   var tMinutesTillTrain = trainFrequency - trainRemainder;
   console.log("MINUTES TILL TRAIN: " + tMinutesTillTrain);
